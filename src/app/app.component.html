@@ -1,7 +1,26 @@
+<!-- Toolbar -->
 <mat-toolbar color="primary">
     <button mat-button *ngFor="let category of categories">{{ category }}</button>
 </mat-toolbar>
+
+<!-- Tags -->
 <mat-chip-list>
     Tags:
     <mat-chip *ngFor="let tag of tags" [color]="tag.color">{{ tag.name }}</mat-chip>
 </mat-chip-list>
+
+<!-- Header -->
+<mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        {{tile.text}}
+    </mat-grid-tile>
+</mat-grid-list>
+
+<!-- Articles -->
+<mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile *ngFor="let article of articles" [colspan]="2" [rowspan]="1" [style.background]="article.color">
+        {{article.title}}
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [style.background]="lightblue">
+    </mat-grid-tile>
+</mat-grid-list>
