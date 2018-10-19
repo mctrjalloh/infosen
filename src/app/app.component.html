@@ -9,7 +9,7 @@
     <mat-chip *ngFor="let tag of tags" [color]="tag.color">{{ tag.name }}</mat-chip>
 </mat-chip-list>
 
-<!-- Header -->
+<!-- Title -->
 <mat-grid-list cols="4" rowHeight="200px">
     <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
         {{tile.text}}
@@ -18,9 +18,14 @@
 
 <!-- Articles -->
 <mat-grid-list cols="3" rowHeight="200px">
-    <mat-grid-tile *ngFor="let article of articles" [colspan]="2" [rowspan]="1" [style.background]="article.color">
-        {{article.title}}
-    </mat-grid-tile>
+    <mat-grid-list cols="2" rowHeight="50px">
+        <mat-grid-tile *ngFor="let article of articles" [colspan]="article.cols" [rowspan]="article.rows"
+            [style.background]="article.color">
+            {{article.title}}
+        </mat-grid-tile>
+    </mat-grid-list>
+    <!-- <mat-grid-title [colspan]="2" [rowspan]="1" [style.background]="lightblue"></mat-grid-title> -->
     <mat-grid-tile [colspan]="1" [style.background]="lightblue">
+        Second one-column
     </mat-grid-tile>
 </mat-grid-list>

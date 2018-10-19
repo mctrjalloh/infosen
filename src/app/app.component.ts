@@ -68,8 +68,8 @@ export class AppComponent {
   articles: Article[] = [
     { title: "One", cols: 2, rows: 1, color: "lightpink" },
     { title: "Two", cols: 2, rows: 1, color: "lightblue" },
-    { title: "Three", cols: 2, rows: 1, color: "lightpink" },
-    { title: "Four", cols: 2, rows: 1, color: "#DDBDF1" },
+    { title: "Three", cols: 1, rows: 1, color: "lightpink" },
+    { title: "Four", cols: 1, rows: 1, color: "#DDBDF1" },
     { title: "Five", cols: 2, rows: 1, color: "lightgreen" }
   ];
 }
