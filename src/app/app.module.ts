@@ -14,9 +14,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ArticleComponent } from "./article/article.component";
 import { HomeComponent } from './home/home.component';
 import { ArticleLinkComponent } from './article-link/article-link.component';
+import { ArticleHomeComponent } from './article-home/article-home.component';
 
 @NgModule({
-  declarations: [AppComponent, ArticleComponent, HomeComponent, ArticleLinkComponent],
+  declarations: [AppComponent, ArticleComponent, HomeComponent, ArticleLinkComponent, ArticleHomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
