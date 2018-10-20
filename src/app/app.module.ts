@@ -1,25 +1,13 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import {
-  MatButtonModule,
-  MatChipsModule,
-  MatGridListModule
-} from "@angular/material";
-import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatChipsModule,
-    MatGridListModule
-  ],
+  declarations: [AppComponent, ArticleComponent],
+  imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
