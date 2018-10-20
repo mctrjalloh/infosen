@@ -15,9 +15,10 @@ import { ArticleComponent } from "./article/article.component";
 import { HomeComponent } from './home/home.component';
 import { ArticleLinkComponent } from './article-link/article-link.component';
 import { ArticleHomeComponent } from './article-home/article-home.component';
+import { ArticleTitleComponent } from './article-title/article-title.component';
 
 @NgModule({
-  declarations: [AppComponent, ArticleComponent, HomeComponent, ArticleLinkComponent, ArticleHomeComponent],
+  declarations: [AppComponent, ArticleComponent, HomeComponent, ArticleLinkComponent, ArticleHomeComponent, ArticleTitleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
