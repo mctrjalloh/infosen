@@ -1,3 +1,12 @@
-<p>
-  article-home works!
-</p>
+<mat-card class="article-home">
+  <mat-card-content>
+    <img src="{{article.image_alt}}">
+    <a href="#">
+      <h2>{{article.title}}</h2>
+    </a>
+
+    <mat-card-subtitle>
+      <small>{{article.author}} - {{ article.date }}</small>
+    </mat-card-subtitle>
+  </mat-card-content>
+</mat-card>
