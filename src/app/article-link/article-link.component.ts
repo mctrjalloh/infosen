@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-article-link',
-  templateUrl: './article-link.component.html',
-  styleUrls: ['./article-link.component.css']
+  selector: "app-article-link",
+  templateUrl: "./article-link.component.html",
+  styleUrls: ["./article-link.component.css"]
 })
 export class ArticleLinkComponent implements OnInit {
+  colors = ["lightpink", "lightblue", "lightgreen"];
 
-  constructor() { }
+  article = {
+    title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: "src/assets/img/bassirou.png",
+    author: "John Doe",
+    date: "Oct 20, 2018"
+  };
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }
