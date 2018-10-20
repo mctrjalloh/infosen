@@ -10,6 +10,7 @@ export interface Title {
   cols: number;
   rows: number;
   text: string;
+  image: string;
 }
 
 export interface Article {
@@ -26,6 +27,8 @@ export interface Article {
 })
 export class AppComponent {
   title = "infosen";
+  colors = ["lightpink", "lightblue", "#DDBDF1", "lightgreen"];
+
   categories: string[] = [
     "Actualite",
     "Societe",
@@ -58,11 +61,19 @@ export class AppComponent {
   ];
 
   tiles: Title[] = [
-    { text: "One", cols: 2, rows: 2, color: "lightblue" },
-    { text: "Two", cols: 1, rows: 1, color: "lightgreen" },
-    { text: "Three", cols: 1, rows: 1, color: "lightpink" },
-    { text: "Four", cols: 1, rows: 1, color: "#DDBDF1" },
-    { text: "Five", cols: 1, rows: 1, color: "#DDBDF1" }
+    {
+      text: "One",
+      image:
+        "http://images.seneweb.com/dynamic/modules/news/images/talla/serigne_mbaye_thiam-21-40-2018_08_40_30.jpg",
+      cols: 2,
+      rows: 2,
+      color: "lightblue"
+    },
+    { text: "Two", image: "", cols: 1, rows: 1, color: "lightgreen" },
+
+    { text: "Three", image: "", cols: 1, rows: 1, color: "lightpink" },
+    { text: "Four", image: "", cols: 1, rows: 1, color: "#DDBDF1" },
+    { text: "Five", image: "", cols: 1, rows: 1, color: "#DDBDF1" }
   ];
 
   articles: Article[] = [

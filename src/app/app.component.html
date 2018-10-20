@@ -12,20 +12,19 @@
 <!-- Title -->
 <mat-grid-list cols="4" rowHeight="200px">
     <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-        {{tile.text}}
+        <img src="{{tile.image}}" />
     </mat-grid-tile>
 </mat-grid-list>
 
 <!-- Articles -->
-<mat-grid-list cols="3" rowHeight="200px">
-    <mat-grid-list cols="2" rowHeight="50px">
-        <mat-grid-tile *ngFor="let article of articles" [colspan]="article.cols" [rowspan]="article.rows"
-            [style.background]="article.color">
-            {{article.title}}
-        </mat-grid-tile>
-    </mat-grid-list>
-    <!-- <mat-grid-title [colspan]="2" [rowspan]="1" [style.background]="lightblue"></mat-grid-title> -->
-    <mat-grid-tile [colspan]="1" [style.background]="lightblue">
-        Second one-column
+<mat-grid-list cols="3" rowHeight="125px">
+    <mat-grid-tile [colspan]="2" [rowspan]="4" [style.background]="colors[0]">
     </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="12" [style.background]="colors[1]">
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="4" [style.background]="colors[2]">
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="4" [style.background]="colors[3]">
+    </mat-grid-tile>
+
 </mat-grid-list>
