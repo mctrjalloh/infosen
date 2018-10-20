@@ -12,9 +12,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ArticleComponent } from "./article/article.component";
+import { HomeComponent } from './home/home.component';
+import { ArticleLinkComponent } from './article-link/article-link.component';
 
 @NgModule({
-  declarations: [AppComponent, ArticleComponent],
+  declarations: [AppComponent, ArticleComponent, HomeComponent, ArticleLinkComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
