@@ -10,7 +10,7 @@ export class ArticleLinkComponent implements OnInit {
 
   article = {
     title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "src/assets/img/bassirou.png",
+    image: "../assets/img/bassirou.png",
     author: "John Doe",
     date: "Oct 20, 2018"
   };
