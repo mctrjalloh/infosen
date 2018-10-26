@@ -20,7 +20,7 @@ import { HomeComponent } from "./home/home.component";
 import { ArticleLinkComponent } from "./article-link/article-link.component";
 import { ArticleHomeComponent } from "./article-home/article-home.component";
 import { ArticleTitleComponent } from "./article-title/article-title.component";
-import { TopicArticlesComponent } from './topic-articles/topic-articles.component';
+import { TopicArticlesComponent } from "./topic-articles/topic-articles.component";
 
 @NgModule({
   declarations: [
