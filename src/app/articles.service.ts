@@ -1,6 +1,7 @@
 import { ARTICLES } from "./mock-articles";
 import { Injectable } from "@angular/core";
 import { Article } from "./article";
+import { Observable, of } from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -8,7 +9,7 @@ import { Article } from "./article";
 export class ArticlesService {
   constructor() {}
 
-  getArticles(): Article[] {
-    return ARTICLES;
+  getArticles(): Observable<Article[]> {
+    return of(ARTICLES);
   }
 }

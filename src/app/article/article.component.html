@@ -1,13 +1,13 @@
-<mat-card class="article">
+<mat-card fxFlex="700px">
   <mat-card-header>
-    <mat-card-title class="article-title">
-      <button mat-stroked-button class="article-category" color="accent" routerLink=".">{{articles[0].category |
+    <mat-card-title>
+      <button mat-stroked-button color="accent" routerLink=".">{{articles[0].category |
         uppercase}}</button>
       <a href="#">
         {{articles[0].title}}
       </a>
     </mat-card-title>
-    <mat-card-subtitle class="article-author article-date">
+    <mat-card-subtitle>
       {{articles[0].author}}
       - <small>{{articles[0].date}}</small>
     </mat-card-subtitle>
@@ -24,27 +24,19 @@
   </mat-card-content>
   <mat-divider [inset]="true"></mat-divider>
   <mat-card-actions>
-    <mat-grid-list cols="4" rowHeight="70px">
-      <mat-grid-tile colspan=1>
-        <button mat-mini-fab color="secondary">
+  <div fxLayout="row" fxLayoutAlign="space-around">
+    <button mat-mini-fab color="secondary">
           <mat-icon matBadge="12" matBadgeColor="secondary" matBadgeOverlap="false">remove_red_eye</mat-icon>
         </button>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <button mat-mini-fab color="accent" class="article-like">
+    <button mat-mini-fab color="accent" class="article-like">
           <mat-icon matBadge="{{articles[0].likes}}" matBadgeColor="accent" matBadgeOverlap="false">favorite</mat-icon>
         </button>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <button mat-mini-fab color="warn" class="article-comment">
+        <button mat-mini-fab color="warn">
           <mat-icon matBadge="{{articles[0].comments.length}}" matBadgeColor="warn" matBadgeOverlap="false">comment</mat-icon>
         </button>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <button mat-mini-fab color="primary" class="article-share">
+    <button mat-mini-fab color="primary">
           <mat-icon matBadge="{{articles[0].shares}}" matBadgeOverlap="false">share</mat-icon>
         </button>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-card-actions>
+  </div>
+      </mat-card-actions>
 </mat-card>

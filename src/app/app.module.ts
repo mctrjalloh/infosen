@@ -43,7 +43,8 @@ import { TopicArticlesComponent } from "./topic-articles/topic-articles.componen
     MatIconModule,
     MatChipsModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
