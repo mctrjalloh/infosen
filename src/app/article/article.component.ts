@@ -21,4 +21,8 @@ export class ArticleComponent implements OnInit {
       .getArticles()
       .subscribe(articles => (this.articles = articles));
   }
+
+  addLike(article_id:number):void {
+    this.articlesService.addLike(article_id);
+  }
 }

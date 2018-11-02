@@ -25,16 +25,16 @@
   <mat-divider [inset]="true"></mat-divider>
   <mat-card-actions>
   <div fxLayout="row" fxLayoutAlign="space-around">
-    <button mat-mini-fab color="secondary">
-          <mat-icon matBadge="12" matBadgeColor="secondary" matBadgeOverlap="false">remove_red_eye</mat-icon>
-        </button>
-    <button mat-mini-fab color="accent" class="article-like">
-          <mat-icon matBadge="{{articles[0].likes}}" matBadgeColor="accent" matBadgeOverlap="false">favorite</mat-icon>
-        </button>
-        <button mat-mini-fab color="warn">
+    <button (click)="addView(0)" mat-mini-fab color="secondary">
+      <mat-icon matBadge="12" matBadgeColor="secondary" matBadgeOverlap="false">remove_red_eye</mat-icon>
+    </button>
+    <button (click)="addLike(0)" mat-mini-fab color="accent" class="article-like">
+      <mat-icon matBadge="{{articles[0].likes}}" matBadgeColor="accent" matBadgeOverlap="false">favorite</mat-icon>
+    </button>
+    <button (click)="addComment(0)" mat-mini-fab color="warn">
           <mat-icon matBadge="{{articles[0].comments.length}}" matBadgeColor="warn" matBadgeOverlap="false">comment</mat-icon>
-        </button>
-    <button mat-mini-fab color="primary">
+    </button>
+    <button (click)="addShare(0)" mat-mini-fab color="primary">
           <mat-icon matBadge="{{articles[0].shares}}" matBadgeOverlap="false">share</mat-icon>
         </button>
   </div>

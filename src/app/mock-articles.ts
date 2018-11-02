@@ -10,11 +10,7 @@ export const ARTICLES: Article[] = [
 
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur optio iusto sit facilis, maxime temporibus saepe tempora, consequatur quibusdam nisi ex corporis asperiores ducimus, amet beatae dignissimos. Porro, placeat sint.",
     7,
-    [
-      "Lorem ipsum dolor sit amet consectetur",
-      "Consequuntur optio iusto sit facilis",
-      "maxime temporibus saepe tempora"
-    ],
+    3,
     4,
     "John Doe",
     "Oct 20, 2018",

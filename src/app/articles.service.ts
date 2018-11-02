@@ -12,4 +12,8 @@ export class ArticlesService {
   getArticles(): Observable<Article[]> {
     return of(ARTICLES);
   }
+
+  addLike(article_id: number):void {
+    ARTICLES[article_id].likes+=1;
+  }
 }
