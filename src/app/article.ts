@@ -6,7 +6,7 @@ export class Article {
     private image_alt: string,
     private content: string,
     private _likes: number,
-    private comments: number,
+    private comments: string[],
     private shares: number,
     private author: string,
     private date: string,
