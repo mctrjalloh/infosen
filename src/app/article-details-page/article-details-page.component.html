@@ -1,0 +1,6 @@
+<div fxLayout="row" fxFlex="800px" fxLayoutGap="20px">
+  <app-article></app-article>
+  <div [style.background]="color" fxFlex="380px">
+    <app-article-link *ngFor="let link of [1, 2, 3, 4, 5, 6, 7, 8, 9]"></app-article-link>
+  </div>
+</div>

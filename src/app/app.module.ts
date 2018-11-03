@@ -21,6 +21,7 @@ import { ArticleLinkComponent } from "./article-link/article-link.component";
 import { ArticleHomeComponent } from "./article-home/article-home.component";
 import { ArticleTitleComponent } from "./article-title/article-title.component";
 import { TopicArticlesComponent } from "./topic-articles/topic-articles.component";
+import { ArticleDetailsPageComponent } from './article-details-page/article-details-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TopicArticlesComponent } from "./topic-articles/topic-articles.componen
     ArticleLinkComponent,
     ArticleHomeComponent,
     ArticleTitleComponent,
-    TopicArticlesComponent
+    TopicArticlesComponent,
+    ArticleDetailsPageComponent
   ],
   imports: [
     BrowserModule,
