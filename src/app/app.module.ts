@@ -22,6 +22,7 @@ import { ArticleHomeComponent } from "./article-home/article-home.component";
 import { ArticleTitleComponent } from "./article-title/article-title.component";
 import { TopicArticlesComponent } from "./topic-articles/topic-articles.component";
 import { ArticleDetailsPageComponent } from './article-details-page/article-details-page.component';
+import { ArticlesHomePageComponent } from './articles-home-page/articles-home-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ArticleDetailsPageComponent } from './article-details-page/article-deta
     ArticleHomeComponent,
     ArticleTitleComponent,
     TopicArticlesComponent,
-    ArticleDetailsPageComponent
+    ArticleDetailsPageComponent,
+    ArticlesHomePageComponent
   ],
   imports: [
     BrowserModule,
