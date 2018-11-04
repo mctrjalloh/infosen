@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-article-title",
@@ -6,6 +6,18 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./article-title.component.css"]
 })
 export class ArticleTitleComponent implements OnInit {
+  @Input()
+  title: string;
+
+  @Input()
+  category: string;
+  
+  @Input()
+  author: string;
+
+  @Input()
+  date: string;
+
   article = {
     category: "Videos",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",

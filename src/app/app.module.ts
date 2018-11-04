@@ -24,6 +24,9 @@ import { TopicArticlesComponent } from "./topic-articles/topic-articles.componen
 import { ArticleDetailsPageComponent } from './article-details-page/article-details-page.component';
 import { ArticlesHomePageComponent } from './articles-home-page/articles-home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ArticleCommentComponent } from './article-comment/article-comment.component';
+import { ArticleReactionsComponent } from './article-reactions/article-reactions.component';
+import { ArticleContentComponent } from './article-content/article-content.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     TopicArticlesComponent,
     ArticleDetailsPageComponent,
     ArticlesHomePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    ArticleCommentComponent,
+    ArticleReactionsComponent,
+    ArticleContentComponent
   ],
   imports: [
     BrowserModule,

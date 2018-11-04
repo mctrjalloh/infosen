@@ -1,67 +1,13 @@
-<div fxLayout="column" fxFlex="800px">
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>
-      <button mat-stroked-button color="accent" routerLink=".">{{articles[0].category |
-        uppercase}}</button>
-      <a href="#">
-        {{articles[0].title}}
-      </a>
-    </mat-card-title>
-    <mat-card-subtitle>
-      {{articles[0].author}}
-      - <small>{{articles[0].date}}</small>
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content class="article-content">
-    <img src="{{articles[0].image}}" alt="{{articles[0].image_alt}}" class="article-image" />
-    <p>
-      {{ articles[0].content }}
-    </p>
-    <mat-chip-list>
-      Tags:
-      <mat-chip *ngFor="let tag of articles[0].tags"><small>{{ tag }}</small></mat-chip>
-    </mat-chip-list>
-  </mat-card-content>
-  <mat-divider [inset]="true"></mat-divider>
-  <mat-card-actions>
-  <div fxLayout="row" fxLayoutAlign="space-around">
-    <button (click)="addView(0)" mat-mini-fab color="secondary">
-      <mat-icon matBadge="12" matBadgeColor="secondary" matBadgeOverlap="false">remove_red_eye</mat-icon>
-    </button>
-    <button (click)="addLike(0)" mat-mini-fab color="accent" class="article-like">
-      <mat-icon matBadge="{{articles[0].likes}}" matBadgeColor="accent" matBadgeOverlap="false">favorite</mat-icon>
-    </button>
-    <button (click)="addComment(0)" mat-mini-fab color="warn">
-          <mat-icon matBadge="{{articles[0].comments.length}}" matBadgeColor="warn" matBadgeOverlap="false">comment</mat-icon>
-    </button>
-    <button (click)="addShare(0)" mat-mini-fab color="primary">
-          <mat-icon matBadge="{{articles[0].shares}}" matBadgeOverlap="false">share</mat-icon>
-        </button>
-  </div>
-      </mat-card-actions>
-</mat-card>
-<mat-divider></mat-divider>
-<!-- Comments -->
-<mat-card *ngFor="let comment of [1, 2, 3, 4]">
-  <mat-card-header>
-    <img src="assets/img/mctr.jpg" mat-card-avatar>
-    <mat-card-title>Moctar
-    </mat-card-title>
-    <mat-card-subtitle>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-        elit. Consequuntur optio iusto sit facilis, maxime 
-        temporibus saepe tempora, consequatur quibusdam 
-        nisi ex corporis asperiores ducimus, amet beatae 
-        dignissimos. Porro, placeat sint.</p>
-      <div fxLayout="row" fxLayoutGap="10px">
-        <button mat-stroked-button color="primary">Like</button>
-        <button mat-stroked-button color="primary">Reply</button>
-    </div>
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-actions>
-    <div *ngFor="let space of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"></div>
-  </mat-card-actions>
-</mat-card>
-</div>
+  <mat-card fxLayout="column">
+    <app-article-title [title]="articles[0].title" [author]="articles[0].author" [date]="articles[0].date" [category]="articles[0].category">
+    </app-article-title>
+    <app-article-content [content]="articles[0].content"></app-article-content>
+    <mat-divider [inset]="true"></mat-divider>
+    <app-article-reactions [likes]="articles[0].likes" [comments]="articles[0].comments" [views]="articles[0].views"
+        [shares]="articles[0].shares" 
+        (onview)="addView(0)"
+        (onlike)="addLike(0)" 
+        (oncomment)="addComment(0)"
+        (onshare)="addShare(0)">
+    </app-article-reactions>
+  </mat-card>

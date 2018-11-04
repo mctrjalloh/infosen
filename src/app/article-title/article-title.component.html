@@ -1,12 +1,13 @@
-<mat-card>
-  <mat-grid-list cols="1" rowHeight="200px">
-    <mat-card-content [ngStyle]="{'background-image': getUrl()}">
-      <mat-grid-tile colspan="1" rowspan="2">
-
-      </mat-grid-tile>
-      <p>
-        Lorem ipsum dolor sit.
-      </p>
-    </mat-card-content>
-  </mat-grid-list>
-</mat-card>
+<mat-card-header>
+    <mat-card-title>
+      <button mat-stroked-button color="accent" routerLink=".">{{category |
+        uppercase}}</button>
+      <a href="#">
+        {{title}}
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{author}}
+      - <small>{{date}}</small>
+    </mat-card-subtitle>
+  </mat-card-header>

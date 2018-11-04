@@ -1,0 +1,14 @@
+<mat-card-actions fxLayout="row" fxLayoutAlign="space-around">
+  <button (click)="onview.emit()" mat-mini-fab color="secondary">
+    <mat-icon matBadge="{{views}}" matBadgeColor="secondary" matBadgeOverlap="false">remove_red_eye</mat-icon>
+  </button>
+  <button (click)="onlike.emit()" mat-mini-fab color="accent" class="article-like">
+    <mat-icon matBadge="{{likes}}" matBadgeColor="accent" matBadgeOverlap="false">favorite</mat-icon>
+  </button>
+  <button (click)="oncomment.emit()" mat-mini-fab color="warn">
+    <mat-icon matBadge="{{comments.length}}" matBadgeColor="warn" matBadgeOverlap="false">comment</mat-icon>
+  </button>
+  <button (click)="onshare.emit()" mat-mini-fab color="primary">
+    <mat-icon matBadge="{{shares}}" matBadgeOverlap="false">share</mat-icon>
+  </button>
+</mat-card-actions>

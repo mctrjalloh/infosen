@@ -5,6 +5,7 @@ export class Article {
     private image: string,
     private image_alt: string,
     private content: string,
+    private _views: number,
     private _likes: number,
     private comments: string[],
     private shares: number,
@@ -12,6 +13,10 @@ export class Article {
     private date: string,
     private tags: string[]
   ) {}
+
+  get views(): number {
+    return this._views;
+  }
 
   get likes(): number {
     return this._likes;

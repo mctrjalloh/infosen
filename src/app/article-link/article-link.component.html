@@ -1,13 +1,12 @@
-<mat-card>
-  <mat-card-header>
-    <img src="{{article.image}}" mat-card-md-image>
-    <div>
+  <mat-card-header fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
+    <img src="{{articles[0].image}}" mat-card-md-image>
+    <div fxLayout="column" fxLayoutAlign="none start" fxLayoutGap="5px">
       <a href="#">
-        <mat-card-title>{{article.title}}</mat-card-title>
+        <mat-card-title>{{articles[0].title}}</mat-card-title>
       </a>
       <mat-card-subtitle>
-        <small>{{article.author}} - {{ article.date }}</small>
+        {{articles[0].author}} - {{ articles[0].date }}
       </mat-card-subtitle>
+      <div> {{articles[0].views}} Views</div>
     </div>
   </mat-card-header>
-</mat-card>
