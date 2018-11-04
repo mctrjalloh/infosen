@@ -27,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ArticleCommentComponent } from './article-comment/article-comment.component';
 import { ArticleReactionsComponent } from './article-reactions/article-reactions.component';
 import { ArticleContentComponent } from './article-content/article-content.component';
+import { HeadArticleComponent } from './head-article/head-article.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ArticleContentComponent } from './article-content/article-content.compo
     NavbarComponent,
     ArticleCommentComponent,
     ArticleReactionsComponent,
-    ArticleContentComponent
+    ArticleContentComponent,
+    HeadArticleComponent
   ],
   imports: [
     BrowserModule,
