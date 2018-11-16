@@ -1,0 +1,30 @@
+<!--
+  <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="10px">
+    <div [style.background]="color" fxFlex="50%">
+      <app-head-article></app-head-article>
+    </div>
+  </div>
+-->
+<app-navbar></app-navbar>
+<mat-chip-list>
+  <mat-chip>Politique</mat-chip> <mat-chip>Societe</mat-chip>
+  <mat-chip>Divers</mat-chip>
+</mat-chip-list>
+<mat-divider></mat-divider>
+<mat-grid-list cols="5" rowHeight="200px">
+  <mat-grid-tile colspan="3" rowspan="2">
+    <app-head-article></app-head-article>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <app-head-article></app-head-article>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <app-head-article></app-head-article>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <app-head-article></app-head-article>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <app-head-article></app-head-article>
+  </mat-grid-tile>
+</mat-grid-list>

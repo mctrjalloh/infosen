@@ -1,2 +1,39 @@
-<div>
+<div fxLayout="column" fxLayoutGap="10px">
+  <!-- Head -->
+  <app-topic-head></app-topic-head>
+  <!-- Body -->
+  <div fxLayout="row" fxLayoutGap="20px">
+    <!-- Left side -->
+    <div
+      fxLayout="column"
+      fxLayoutAlign="flex-start flex-start"
+      fxFlex="800px"
+      fxLayoutGap="10px"
+    >
+      <!-- Content Left side -->
+      <div fxLayout="row wrap" fxLayoutGap="0px">
+        <app-article-home
+          fxFlex="400px"
+          *ngFor="let article of [1, 2, 3, 4, 5, 6]"
+        ></app-article-home>
+        <mat-paginator
+          [length]="100"
+          [pageSize]="6"
+          [pageSizeOptions]="[2, 4, 6, 8]"
+        >
+        </mat-paginator>
+      </div>
+    </div>
+    <!-- Right side -->
+    <div fxLayout="column" fxLayoutGap="10px" fxFlex>
+      <img fxFlex="300px" mat-card-lg-image src="assets/img/mctr.jpg" />
+      <app-article-link *ngFor="let link of [1, 2, 3, 4]"></app-article-link>
+      <mat-paginator
+        [length]="100"
+        [pageSize]="4"
+        [pageSizeOptions]="[2, 4, 6, 8]"
+      >
+      </mat-paginator>
+    </div>
+  </div>
 </div>

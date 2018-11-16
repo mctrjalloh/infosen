@@ -1,11 +1,11 @@
-<mat-card fxFlex="340px">
+<mat-card>
   <mat-card-content>
-    <img src="{{article.image}}">
+    <img src="{{article.image}}" />
     <a href="#">
-      <h2>{{article.title}}</h2>
+      <h2>{{ article.title }}</h2>
     </a>
     <mat-card-subtitle>
-      <small>{{article.author}} - {{ article.date }}</small>
+      <small>{{ article.author }} - {{ article.date }}</small>
     </mat-card-subtitle>
   </mat-card-content>
   <mat-card-actions>
@@ -13,17 +13,15 @@
       <mat-grid-tile [colspan]="2">
         <button mat-stroked-button>LIRE</button>
       </mat-grid-tile>
-      <mat-grid-tile [colspan]="2">
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1">
-      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2"> </mat-grid-tile>
+      <mat-grid-tile [colspan]="1"> </mat-grid-tile>
       <mat-grid-tile [colspan]="1">
         <button mat-button color="warn">
-          <mat-icon matBadge={{article.comments.length}} matBadgeColor="warn">comment</mat-icon>
-
+          <mat-icon matBadge="{{article.comments.length}}" matBadgeColor="warn"
+            >comment</mat-icon
+          >
         </button>
       </mat-grid-tile>
-
     </mat-grid-list>
   </mat-card-actions>
 </mat-card>
