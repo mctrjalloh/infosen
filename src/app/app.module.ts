@@ -30,6 +30,7 @@ import { ArticleReactionsComponent } from "./article-reactions/article-reactions
 import { ArticleContentComponent } from "./article-content/article-content.component";
 import { HeadArticleComponent } from "./head-article/head-article.component";
 import { TopicHeadComponent } from "./topic-head/topic-head.component";
+import { HomeTopicComponent } from './home-topic/home-topic.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TopicHeadComponent } from "./topic-head/topic-head.component";
     ArticleReactionsComponent,
     ArticleContentComponent,
     HeadArticleComponent,
-    TopicHeadComponent
+    TopicHeadComponent,
+    HomeTopicComponent
   ],
   imports: [
     BrowserModule,

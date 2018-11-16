@@ -11,17 +11,9 @@
       fxLayoutGap="10px"
     >
       <!-- Content Left side -->
-      <div fxLayout="row wrap" fxLayoutGap="0px">
-        <app-article-home
-          fxFlex="400px"
-          *ngFor="let article of [1, 2, 3, 4, 5, 6]"
-        ></app-article-home>
-        <mat-paginator
-          [length]="100"
-          [pageSize]="6"
-          [pageSizeOptions]="[2, 4, 6, 8]"
-        >
-        </mat-paginator>
+      <app-home-topic></app-home-topic>
+      <div *ngIf="home">
+        <app-home-topic *ngFor="let topic of [1, 2, 3]"></app-home-topic>
       </div>
     </div>
     <!-- Right side -->
