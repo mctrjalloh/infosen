@@ -31,4 +31,12 @@ export class ArticleComponent implements OnInit {
   addComment(article_id: number): void {
     this.commenting = true;
   }
+
+  addShare(article_id: number): void {
+    return null;
+  }
+
+  addView(article_id: number): void {
+    return null;
+  }
 }
