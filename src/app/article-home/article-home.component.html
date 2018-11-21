@@ -1,7 +1,7 @@
 <mat-card>
   <mat-card-content>
     <img src="{{article.image}}" />
-    <a href="#">
+    <a routerLink="article-details-page">
       <h2>{{ article.title }}</h2>
     </a>
     <mat-card-subtitle>
@@ -11,7 +11,9 @@
   <mat-card-actions>
     <mat-grid-list cols="6">
       <mat-grid-tile [colspan]="2">
-        <button mat-stroked-button>LIRE</button>
+        <a routerLink="article-details-page">
+          <button mat-stroked-button>LIRE</button>
+        </a>
       </mat-grid-tile>
       <mat-grid-tile [colspan]="2"> </mat-grid-tile>
       <mat-grid-tile [colspan]="1"> </mat-grid-tile>

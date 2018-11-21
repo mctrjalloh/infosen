@@ -1,13 +1,11 @@
 <mat-card-header>
-    <mat-card-title>
-      <button mat-stroked-button color="accent" routerLink=".">{{category |
-        uppercase}}</button>
-      <a href="#">
-        {{title}}
-      </a>
-    </mat-card-title>
-    <mat-card-subtitle>
-      {{author}}
-      - <small>{{date}}</small>
-    </mat-card-subtitle>
-  </mat-card-header>
+  <mat-card-title>
+    <button mat-stroked-button color="accent" routerLink=".">
+      {{ category | uppercase }}
+    </button>
+    <a routerLink="article-details-page"> {{ title }} </a>
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{ author }} - <small>{{ date }}</small>
+  </mat-card-subtitle>
+</mat-card-header>

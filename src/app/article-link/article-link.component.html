@@ -1,12 +1,18 @@
-  <mat-card-header fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
-    <img src="{{articles[0].image}}" mat-card-md-image>
-    <div fxLayout="column" fxLayoutAlign="none start" fxLayoutGap="5px">
-      <a href="#">
-        <mat-card-title>{{articles[0].title}}</mat-card-title>
-      </a>
-      <mat-card-subtitle>
-        {{articles[0].author}} - <small>{{ articles[0].date }}</small>
-      </mat-card-subtitle>
-      <div> <small>{{articles[0].views}} Views</small></div>
+<mat-card-header
+  fxLayout="row"
+  fxLayoutAlign="space-between"
+  fxLayoutGap="10px"
+>
+  <img src="{{articles[0].image}}" mat-card-md-image />
+  <div fxLayout="column" fxLayoutAlign="none start" fxLayoutGap="5px">
+    <a routerLink="article-details-page">
+      <mat-card-title>{{ articles[0].title }}</mat-card-title>
+    </a>
+    <mat-card-subtitle>
+      {{ articles[0].author }} - <small>{{ articles[0].date }}</small>
+    </mat-card-subtitle>
+    <div>
+      <small>{{ articles[0].views }} Views</small>
     </div>
-  </mat-card-header>
+  </div>
+</mat-card-header>

@@ -1,3 +1,4 @@
+import { AppRoutingModule } from "./app-routing.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -30,7 +31,7 @@ import { ArticleReactionsComponent } from "./article-reactions/article-reactions
 import { ArticleContentComponent } from "./article-content/article-content.component";
 import { HeadArticleComponent } from "./head-article/head-article.component";
 import { TopicHeadComponent } from "./topic-head/topic-head.component";
-import { HomeTopicComponent } from './home-topic/home-topic.component';
+import { HomeTopicComponent } from "./home-topic/home-topic.component";
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { HomeTopicComponent } from './home-topic/home-topic.component';
     HomeTopicComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,

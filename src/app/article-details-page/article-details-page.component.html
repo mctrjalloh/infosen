@@ -1,15 +1,18 @@
 <div fxLayout="column" fxLayoutGap="20px">
-  <app-navbar></app-navbar>
   <div fxLayout="row" fxLayoutGap="0px">
     <div fxLayout="column">
       <app-article></app-article>
       <mat-divider></mat-divider>
       <div fxLayout="column" fxLayoutOffset="50">
-        <app-article-comment *ngFor="let comment of [1, 2, 3, 4]"></app-article-comment>
+        <app-article-comment
+          *ngFor="let comment of [1, 2, 3, 4]"
+        ></app-article-comment>
       </div>
     </div>
     <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="400px">
-      <app-article-link *ngFor="let link of [1, 2, 3, 4, 5, 6, 7, 8, 9]"></app-article-link>
+      <app-article-link
+        *ngFor="let link of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+      ></app-article-link>
     </div>
   </div>
 </div>
